@@ -1,0 +1,29 @@
+name: Method improvement
+description: Propose an improvement to risk ranking, testing, or reporting.
+title: "[Improvement]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Review problem
+      description: What review failure or gap should this change address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed method
+      description: Explain how the proposal preserves the evidence and safety rules.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proof
+    attributes:
+      label: Success evidence
+      description: How can a reviewer verify that the proposal improves the skill?
+    validations:
+      required: true

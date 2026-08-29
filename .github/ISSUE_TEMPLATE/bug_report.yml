@@ -1,0 +1,49 @@
+name: Skill behavior problem
+description: Report unclear, unsafe, or incorrect skill behavior.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, private source code, or production logs.
+
+  - type: input
+    id: host
+    attributes:
+      label: Agent host and version
+      description: For example, GitHub Copilot CLI 1.0.82.
+      placeholder: GitHub Copilot CLI 1.0.82
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: Request that activated the skill
+      description: Remove repository-specific or confidential details.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, private code, and sensitive logs.
+          required: true
