@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="skills/differential-regression-review/SKILL.md">
-    <img src="assets/differential-regression-review.png" alt="Preview of Differential Regression Review in the GitHub Copilot app" width="900">
+    <img src="assets/differential-regression-review.png" alt="Preview of Differential Regression Review in the GitHub Copilot app">
   </a>
 </p>
 
